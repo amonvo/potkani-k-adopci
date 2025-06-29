@@ -1,0 +1,182 @@
+:root {
+    --primary: #61926e;
+    --primary-light: #b3cbb9;
+    --accent: #ffe8c2;
+    --danger: #d5483e;
+    --warning: #ff9900;
+    --ok: #59c282;
+    --text: #1b392b;
+    --bg: #f5f6fa;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-light);
+    padding: 1.3rem 2.2rem;
+    box-shadow: 0 3px 15px 0 rgba(60,80,80,0.13);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--primary);
+    text-shadow: 1px 2px 6px #fff2;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 1.15rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+    transition: background 0.18s, color 0.18s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background: var(--accent);
+    color: var(--primary);
+}
+
+main {
+    padding: 2.5rem 1rem 2.5rem 1rem;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 2.8rem;
+    color: var(--primary);
+    letter-spacing: 0.5px;
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: 0 1px 0 #fff7;
+}
+
+.potkani-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+    margin-top: 1.3rem;
+    justify-content: center;
+}
+
+.potkan-card {
+    background: var(--white);
+    border-radius: 1.3rem;
+    box-shadow: 0 6px 22px rgba(60, 80, 80, 0.12);
+    padding: 1.8rem 1.2rem 1.2rem 1.2rem;
+    min-width: 250px;
+    max-width: 310px;
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.18s, box-shadow 0.18s;
+    border: 2px solid var(--primary-light);
+}
+
+.potkan-card:hover {
+    transform: translateY(-7px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(60,80,80,0.16);
+    border-color: var(--primary);
+}
+
+.potkan-img {
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+    border: 4px solid var(--primary-light);
+    background: #eaeaea;
+    box-shadow: 0 3px 13px 0 rgba(80,120,100,0.11);
+    position: relative;
+    z-index: 2;
+}
+
+.potkan-info {
+    text-align: center;
+    width: 95%;
+}
+
+.potkan-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.potkan-info p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+
+.status {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 3px 12px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.1rem;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+.status.volny { background: var(--ok); }
+.status.rezervace { background: var(--warning);}
+.status.adoptovan { background: var(--danger);}
+.status.jiny { background: #7c8197;}
+
+@media (max-width: 700px) {
+    .potkani-list {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .potkan-card {
+        max-width: 98vw;
+        min-width: 0;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.7rem;
+        padding: 1rem;
+    }
+    main {
+        padding: 1.2rem 0.2rem 1.5rem 0.2rem;
+    }
+}
+
+a, a:visited {
+    color: var(--primary);
+}
+a:hover {
+    color: var(--danger);
+}

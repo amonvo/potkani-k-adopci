@@ -1,0 +1,35 @@
+[
+  {
+    "jmeno": "Kvído",
+    "vek": 2,
+    "jednotka": "měsíce",
+    "pohlavi": "samec",
+    "vek_kategorie": "mimina",
+    "depozitum": "Peroxid (Praha)",
+    "stav": "volný",
+    "popis": "Velký mazel, vhodný k dalším klukům.",
+    "foto": "https://placekitten.com/200/200"
+  },
+  {
+    "jmeno": "Stella",
+    "vek": 5,
+    "jednotka": "měsíců",
+    "pohlavi": "samice",
+    "vek_kategorie": "dospeli",
+    "depozitum": "Anna (Brno)",
+    "stav": "rezervace",
+    "popis": "Hravá, přátelská, zvyklá na lidi.",
+    "foto": "https://placekitten.com/201/200"
+  },
+  {
+    "jmeno": "Bertík",
+    "vek": 22,
+    "jednotka": "měsíců",
+    "pohlavi": "samec",
+    "vek_kategorie": "seniori",
+    "depozitum": "Lída (Olomouc)",
+    "stav": "volný",
+    "popis": "Miluje klid a spánek.",
+    "foto": "https://placekitten.com/200/201"
+  }
+]
