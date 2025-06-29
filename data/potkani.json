@@ -1,19 +1,19 @@
 [
-  {
+{
   "jmeno": "Pollux a Castor",
-  "vek": 11,
-  "jednotka": "měsíců",
+  "vek": 2,
+  "jednotka": "roky",
   "pohlavi": "samci",
-  "vek_kategorie": "dospeli",
+  "vek_kategorie": "seniori",
   "depozitum": "Peroxid (Praha)",
   "stav": "volný",
-  "popis": "Chlapci, jež dostali jména Pollux a Castor, neboť jejich předchozí majitelka se je neobtěžovala ani pojmenovat, ke mně přišli s tím, že o ně dávno ztratila zájem. Prý \"koušou a nemazlí se\". To je pravda jenom poloviční – vskutku jsou ostražití, ale nechají se hladit i nosit, z ruky si mlsku vezmou, no zkrátka s trochou trpělivosti se z nich ještě ve seniorské věku stanou mazlíci.",
+  "popis": "Chlapci, jež dostali jména Pollux a Castor, neboť jejich předchozí majitelka se je neobtěžovala ani pojmenovat, ke mně přišli s tím, že o ně dávno ztratila zájem. Prý \"koušou a nemazlí se\". To je pravda jenom poloviční – vskutku jsou ostražití, ale nechají se hladit i nosit, z ruky si mlsku vezmou. S trochou trpělivosti se z nich i ve svém seniorském věku stanou mazlíci.",
   "foto": "img/pollux-castor.webp"
 },
 {
   "jmeno": "Remi",
-  "vek": 12,
-  "jednotka": "měsíců",
+  "vek": 2,
+  "jednotka": "roky",
   "pohlavi": "samec",
   "vek_kategorie": "dospeli",
   "depozitum": "Peroxid (Praha)",
