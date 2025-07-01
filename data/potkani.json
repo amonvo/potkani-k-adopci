@@ -5,7 +5,7 @@
     "jednotka": "roky",
     "pohlavi": "samci",
     "vek_kategorie": "seniori",
-    "depozitum": "Peroxid (Praha)",
+    "lokace": "Peroxid (Praha)",
     "stav": "volný",
     "popis": "Chlapci, jež dostali jména Pollux a Castor, neboť jejich předchozí majitelka se je neobtěžovala ani pojmenovat, ke mně přišli s tím, že o ně dávno ztratila zájem. Prý \"koušou a nemazlí se\". To je pravda jenom poloviční – vskutku jsou ostražití, ale nechají se hladit i nosit, z ruky si mlsku vezmou. S trochou trpělivosti se z nich i ve svém seniorském věku stanou mazlíci.",
     "foto": "img/pollux-castor.webp"
@@ -16,7 +16,7 @@
     "jednotka": "roky",
     "pohlavi": "samec",
     "vek_kategorie": "seniori",
-    "depozitum": "Peroxid (Praha)",
+    "lokace": "Peroxid (Praha)",
     "stav": "rezervace",
     "popis": "Starší, avšak zdravý a stále akční chlapík, který je ready ve svém novém doma žít ještě několik měsíců, klidně i rok a víc – stáří na něm skutečně není vůbec znát. Dostal se k nám s Punyou poté, co byla jeho předchozí majitelka donucena se trvale odstěhovat z Česka a potkany si nemohla vzít s sebou. V ideálním případě by měl jít domů k chovateli se zkušeností se seznamováním dospělých samců, případně do společnosti dvou mimin z jiné dočasky či chs.",
     "foto": "img/remi.webp"
@@ -27,7 +27,7 @@
     "jednotka": "měsíce",
     "pohlavi": "samice",
     "vek_kategorie": "dospeli",
-    "depozitum": "Peroxid (Praha)",
+    "lokace": "Peroxid (Praha)",
     "stav": "volný",
     "popis": "Mladá holčička, která se k nám dostala poté, co po ani ne třech týdnech omrzela svou předchozí rodinu. Jelikož si nepořídili potkánky od registrovaného chovatele ale náhodného množitele, nebylo je kam vrátit a tak Jitřenka i se svou kámoškou Večernicí, co již našla nový domov, skončila u mě. Jitřenka je velmi aktivní holčička, ideální pro ni bude domov, kde by mohla alespoň několik hodin denně běhat na volno po celém bytě či alespoň pokoji. Pohladit se nechá, vloženě vymazlená však není a nošení nemá ráda.",
     "foto": "img/jitrenka.webp"
@@ -38,7 +38,7 @@
     "jednotka": "měsíců",
     "pohlavi": "samice",
     "vek_kategorie": "dospeli",
-    "depozitum": "Peroxid (Praha)",
+    "lokace": "Peroxid (Praha)",
     "stav": "rezervace",
     "popis": "Mimi zemřela kamarádka, noví majitelé už neplánovali pokračovat v chovu a tak skončila u nás. Je to klidnější holčička, necelý rok stará. Není vyloženě vymazlená, ale nechá se pohladit a případně i vzít do ruky.",
     "foto": "img/miimi.webp"
@@ -49,7 +49,7 @@
     "jednotka": "měsíc",
     "pohlavi": "samice",
     "vek_kategorie": "mimina",
-    "depozitum": "Peroxid (Praha)",
+    "lokace": "Peroxid (Praha)",
     "stav": "volný",
     "popis": "Poslední mimčo z druhého vrhu, co u nás zbylo po zrušení rezervace na ni, Mimi a Jitřenku. Je to tryško myš, ale když se jí budou noví majitelé věnovat, vyroste z ní mazlík, je totiž zvykaná na dotek už od narození.",
     "foto": "img/alnilamm.webp"
@@ -60,7 +60,7 @@
     "jednotka": "měsíc",
     "pohlavi": "samec",
     "vek_kategorie": "dospeli",
-    "depozitum": "Peroxid (Praha)",
+    "lokace": "Peroxid (Praha)",
     "stav": "volný",
     "popis": "Kluk, který si prožil 2 týdny v terárku u hada a odnesl si z toho následky. Had se ho sice ani nedotkl, přesto ze zdravého mladého potkana zbyla po dvoutýdenní \"kúře\" jen hromádka neštěstí a stresu. Po přemístění do peroxidova depozita a seznámení s ostatními kluky však skoro pookřál a nyní už vyhlíží svůj nový domov. Takový, kde mu dá nový majitel dostatek času se vyléčit ze svého traumatu a pochopit, že u něj už mu nic zlého nehrozí.",
     "foto": "img/tonicek.jpg"
