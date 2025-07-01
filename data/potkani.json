@@ -64,5 +64,27 @@
     "stav": "volný",
     "popis": "Kluk, který si prožil 2 týdny v terárku u hada a odnesl si z toho následky. Had se ho sice ani nedotkl, přesto ze zdravého mladého potkana zbyla po dvoutýdenní \"kúře\" jen hromádka neštěstí a stresu. Po přemístění do peroxidova depozita a seznámení s ostatními kluky však skoro pookřál a nyní už vyhlíží svůj nový domov. Takový, kde mu dá nový majitel dostatek času se vyléčit ze svého traumatu a pochopit, že u něj už mu nic zlého nehrozí.",
     "foto": "img/tonicek.jpg"
+  },
+  {
+    "jmeno": "Thrumdor a Glumric",
+    "vek": 2,
+    "jednotka": "měsíce",
+    "pohlavi": "samci",
+    "vek_kategorie": "mimina",
+    "lokace": "Nina (Milovice/Praha/Česká Lípa)",
+    "stav": "volný",
+    "popis": "Přebytek hadařky, který měl štěstí (ostatní sourozenci skončili jako krmení), půjdou jedině spolu ve dvojicích (kluci spolu).",
+    "foto": "img/Thrumdor_a_Glumric.jfif"
+  },
+    {
+    "jmeno": "Thrumdor a Glumric",
+    "vek": 2,
+    "jednotka": "měsíce",
+    "pohlavi": "samice",
+    "vek_kategorie": "mimina",
+    "lokace": "Nina (Milovice/Praha/Česká Lípa)",
+    "stav": "volný",
+    "popis": "Přebytek hadařky, který měl štěstí (ostatní sourozenci skončili jako krmení), půjdou jedině spolu ve dvojicích (kluci spolu).",
+    "foto": "img/Iorriel_a_Galadhiel.jpg"
   }
 ]
