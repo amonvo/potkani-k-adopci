@@ -1,83 +1,299 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potkani k adopci</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <title>Potkani k adopci - Najděte svého nového přítele</title>
+    <meta name="description" content="Pomáháme potkanům najít nový domov. Adoptujte potkana nebo nám pomozte s umístěním.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐭</text></svg>">
 </head>
 
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-rat">🐭</div>
+            <div class="loading-text">Načítáme potkany...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-logo">🐭 Potkani k adopci</div>
-        <ul class="nav-links">
-            <li><a href="#mimina">Mimina</a></li>
-            <li><a href="#dospeli">Dospělí</a></li>
-            <li><a href="#seniori">Senioři</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-        <button id="darkModeToggle" title="Přepnout světlý/tmavý režim" class="dark-toggle-btn">🌙</button>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🐭</span>
+                <span class="logo-text">Potkani k adopci</span>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Otevřít menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#mimina" class="nav-link">Mimina</a></li>
+                <li><a href="#dospeli" class="nav-link">Dospělí</a></li>
+                <li><a href="#seniori" class="nav-link">Senioři</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button id="darkModeToggle" class="theme-toggle" aria-label="Přepnout téma">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
     </nav>
-    <main>
-        <section class="uvod">
-            <h1>Pomáháme potkanům najít nový domov</h1>
-            <p>Jsme komunita, která zachraňuje potkany v nouzi a hledá jim nové domovy. Pokud chcete adoptovat, projděte
-                si aktuální nabídku, pokud naopak potřebujete pomoci s umístěním, <a href="#kontakt"><b>ozvěte se
-                        nám</b></a>.</p>
-        </section>
-        <section id="mimina">
-            <h2>Mimina (do 3 měsíců)</h2>
-            <div id="mimina-list" class="potkani-list"></div>
-        </section>
-        <section id="dospeli">
-            <h2>Dospělí (3 měsíce až 1,5 roku)</h2>
-            <div id="dospeli-list" class="potkani-list"></div>
-        </section>
-        <section id="seniori">
-            <h2>Senioři (nad 1,5 roku)</h2>
-            <div id="seniori-list" class="potkani-list"></div>
-        </section>
-        <section id="kontakt">
-            <h2>Kontakt a informace</h2>
-            <p>
-                Chcete nabídnout domov? Nebo hledáte potkana?<br>
-                Kontaktujte nás na e-mailu
-                <a class="btn" href="mailto:info@potkanidomov.cz">info@potkanidomov.cz</a>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">❤️</span>
+                <span>Zachraňujeme životy</span>
+            </div>
+            <h1 class="hero-title">
+                Pomáháme potkanům najít 
+                <span class="gradient-text">nový domov</span>
+            </h1>
+            <p class="hero-description">
+                Jsme komunita, která zachraňuje potkany v nouzi a hledá jim nové domovy. 
+                Každý potkan si zaslouží lásku a péči.
             </p>
-            <div class="socials">
-                <a href="https://www.facebook.com/groups/647002064948612" target="_blank" class="social-link" title="Facebook">
-                    <svg height="28" width="28" viewBox="0 0 320 512" style="vertical-align:middle;">
-                        <path fill="#4267B2"
-                            d="M279.14 288l14.22-92.66h-88.91V127.75c0-25.35 12.42-50.06
-                52.24-50.06H293V6.26S259.5 0 225.36 0c-73.22 0-121.09 44.38-121.09 124.72v70.62H22.89V288h81.38v224h100.2V288z" />
+            <div class="hero-actions">
+                <a href="#mimina" class="btn btn-primary">
+                    <span>Prohlédnout potkany</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
-                    Facebook
+                </a>
+                <a href="#kontakt" class="btn btn-secondary">
+                    <span>Kontaktovat nás</span>
                 </a>
             </div>
-            <p class="note">
-                Aktualizace provádí správce webu na základě podkladů od depozitářů. Pokud chcete přidat nového potkana,
-                napište nám.
-            </p>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number" data-count="150">0</div>
+                <div class="stat-label">Zachráněných potkanů</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="98">0</div>
+                <div class="stat-label">Úspěšných adopcí</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="24">0</div>
+                <div class="stat-label">Aktivních dobrovolníků</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Search and Filter Section -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-header">
+                    <h2>Najděte svého nového přítele</h2>
+                    <p>Použijte filtry pro rychlejší vyhledávání</p>
+                </div>
+                <div class="search-controls">
+                    <div class="search-box">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                        <input type="text" id="searchInput" placeholder="Hledat podle jména..." class="search-input">
+                    </div>
+                    <div class="filter-group">
+                        <select id="statusFilter" class="filter-select">
+                            <option value="">Všechny stavy</option>
+                            <option value="volny">Volný</option>
+                            <option value="rezervace">Rezervace</option>
+                            <option value="adoptovan">Adoptován</option>
+                        </select>
+                        <select id="genderFilter" class="filter-select">
+                            <option value="">Všechna pohlaví</option>
+                            <option value="samec">Samec</option>
+                            <option value="samice">Samice</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- Rats Sections -->
+        <section id="mimina" class="rats-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-icon">🍼</span>
+                        Mimina (do 3 měsíců)
+                    </h2>
+                    <div class="section-count" id="mimina-count">0 potkanů</div>
+                </div>
+                <div id="mimina-list" class="rats-grid"></div>
+            </div>
+        </section>
 
+        <section id="dospeli" class="rats-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-icon">🐭</span>
+                        Dospělí (3 měsíce až 1,5 roku)
+                    </h2>
+                    <div class="section-count" id="dospeli-count">0 potkanů</div>
+                </div>
+                <div id="dospeli-list" class="rats-grid"></div>
+            </div>
+        </section>
+
+        <section id="seniori" class="rats-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-icon">👴</span>
+                        Senioři (nad 1,5 roku)
+                    </h2>
+                    <div class="section-count" id="seniori-count">0 potkanů</div>
+                </div>
+                <div id="seniori-list" class="rats-grid"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontakt" class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 class="contact-title">Kontakt a informace</h2>
+                        <p class="contact-description">
+                            Chcete nabídnout domov nebo hledáte potkana? Jsme tu pro vás!
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-content">
+                                    <h3>Email</h3>
+                                    <a href="mailto:info@potkanidomov.cz" class="contact-link">
+                                        info@potkanidomov.cz
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">📱</div>
+                                <div class="method-content">
+                                    <h3>Sociální sítě</h3>
+                                    <a href="https://www.facebook.com/groups/647002064948612" target="_blank" class="social-link">
+                                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                        </svg>
+                                        Facebook skupina
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-note">
+                            <p>
+                                <strong>Poznámka:</strong> Aktualizace provádí správce webu na základě podkladů od depozitářů. 
+                                Pokud chcete přidat nového potkana, napište nám.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <!-- Lightbox pro zvětšení obrázku -->
-    <div id="lightbox" class="lightbox" style="display:none;">
-        <span class="lightbox-close" id="lightboxClose">&times;</span>
-        <img class="lightbox-img" id="lightboxImg" src="" alt="Zvětšený obrázek potkana">
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Zavřít">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <div class="lightbox-info" id="lightboxInfo"></div>
+        </div>
     </div>
-    <footer>
-        <div>
-            <span>© 2025 Potkaní záchrana | Vyrobil s ♥️ <a href="https://github.com/amonvo" target="_blank">Vojta &
-                    kolektiv</a></span>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🐭</span>
+                        <span class="logo-text">Potkani k adopci</span>
+                    </div>
+                    <p class="footer-description">
+                        Pomáháme potkanům najít nový domov a šíříme povědomí o správné péči o tyto úžasné tvory.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Rychlé odkazy</h4>
+                    <ul class="footer-links">
+                        <li><a href="#mimina">Mimina</a></li>
+                        <li><a href="#dospeli">Dospělí</a></li>
+                        <li><a href="#seniori">Senioři</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Informace</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="showModal('adoption-guide')">Průvodce adopcí</a></li>
+                        <li><a href="#" onclick="showModal('care-guide')">Péče o potkany</a></li>
+                        <li><a href="#" onclick="showModal('faq')">Často kladené otázky</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Sledujte nás</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/groups/647002064948612" target="_blank" class="social-link-footer">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Potkaní záchrana | Vyrobil s ❤️ <a href="https://github.com/amonvo" target="_blank">Vojta & kolektiv</a></p>
+            </div>
         </div>
     </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Zpět nahoru">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="12" y1="19" x2="12" y2="5"/>
+            <polyline points="5,12 12,5 19,12"/>
+        </svg>
+    </button>
+
+    <!-- Toast notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
     <script src="js/app.js"></script>
 </body>
-
-
-
 </html>
